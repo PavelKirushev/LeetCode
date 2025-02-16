@@ -1,13 +1,7 @@
 /**
- * Example:
- * var li = ListNode(5)
- * var v = li.`val`
- * Definition for singly-linked list.
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
- * }
- */
-
+ *You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+ *You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+*/
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
@@ -64,11 +58,8 @@ class Solution {
 
 fun main() {
     var l1 = ListNode(0)
-//    l1.next = ListNode( 4)
-//    l1.next!!.next = ListNode( 3)
     var l2 = ListNode(7)
     l2.next = ListNode( 3)
-//    l2.next!!.next = ListNode( 4)
 
     var result = Solution()
     var res_l = result.addTwoNumbers(l1, l2)
